@@ -1,0 +1,13 @@
+[project]
+name = "financial-lab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.128.7",
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.12.0",
+    "python-dotenv>=1.2.1",
+    "qdrant-client[fastembed]>=1.16.2",
+]
