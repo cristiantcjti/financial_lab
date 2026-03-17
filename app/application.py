@@ -1,7 +1,7 @@
 from fastapi import APIRouter, FastAPI
 from fastapi.responses import ORJSONResponse
 
-from routers import healthcheck, search
+from routers import healthcheck, search, rag
 
 
 class ApplicationBuilder:
@@ -16,6 +16,7 @@ class ApplicationBuilder:
         self.__routes: list[APIRouter] = [
             healthcheck.router,
             search.router,
+            rag.router
         ]
         
         self.__configure_routes()

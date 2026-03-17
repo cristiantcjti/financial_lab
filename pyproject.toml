@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "fastapi[standard]>=0.128.7",
     "fastembed>=0.7.4",
+    "groq>=1.1.1",
     "httpie>=3.2.4",
     "orjson>=3.11.7",
     "pydantic>=2.12.5",
