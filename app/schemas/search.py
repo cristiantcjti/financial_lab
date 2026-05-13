@@ -1,11 +1,11 @@
-from typing import List, Optional, Dict, Any
+from typing import List, Any
 from pydantic import BaseModel
 
 
 class SearchRequest(BaseModel):
     query: str
     limit: int = 3
-    filter: Optional[Dict[str, Any]] = None
+    filter: dict[str, Any] | None = None
 
 
 class SearchResult(BaseModel):
